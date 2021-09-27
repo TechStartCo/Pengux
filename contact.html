@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact modal</title>
+    <link rel="stylesheet" href="./Pengux/css/contact.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <p onclick="document.getElementById('contact-us-modal').style.display='block'">
+        modal
+    </p>
+    <div id="contact-us-modal">
+        <div class="modal-e">
+
+            <div class="modal-header-e">
+                <span id="close-button" class="material-icons" onclick="document.getElementById('contact-us-modal').style.display='none'">close</span>
+            </div>
+
+
+            <div class="modal-body-e">
+                <div class="modal-title-e">
+                    <p>Get In Touch</p>
+                </div>
+                <div class="">
+                <div class="modal-content-e">
+                    <div class="left-container-e">
+                        <form id="contact-us-form">
+                            <input type="text" placeholder="Enter name" name="name-error-message">
+                            <br>
+                            <!-- <span class="contact-us-form-error" id="name-error-message">Please enter your name</span> -->
+                            <input type="text" placeholder="Enter email" name="name-error-message">
+                            <br>
+                            <!-- <span class="contact-us-form-error" id="name-error-message">Please enter your email address</span>  -->
+                            <input type="text" placeholder="Enter name" name="name-error-message">
+                            <br>
+                            <!-- <span class="contact-us-form-error" id="name-error-message">Please enter your message</span>                         -->
+                        </form>
+                    </div>
+                    <div class="right-container-e">
+                        <p><b>Address</b> - Street, City, Country</p>
+                        <p><b>Phone</b> - (+976)  0000- 0000</p>
+                        <p><b>E-mail</b> - Penguxdesign@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="footer-e">
+                    <button type="submit" class="contact-form-btn" value="Send">
+                    Send
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
