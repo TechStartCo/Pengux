@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/main.js"></script>
+    <title>Pengux UI/UX Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container-o">
+        <div class="header-container-o">
+            <div class="ham-btn">
+                <a href="#"> <img class="x-img" id="menu-img" src="/assets/img/close.png" alt="x"> </a>
+            </div>
+        </div>
+        <div class="mid-container-o">
+            <div class="mid-left-container-o">
+                <div class="list-container-o">
+                    <div class="list-o">
+                        <li><a id="photo" onmouseover="changeImage(0)" href="#">Home</a></li>
+                        <li><a class="b-img" onmouseover="changeImage(1)" href="#">Blog</a></li>
+                        <li><a class="a-img" onmouseover="changeImage(2)" href="#">About</a></li>
+                        <li><a class="c-img" onmouseover="changeImage(3)" href="#">Contact</a></li>
+                    </div>
+                </div>
+            </div>
+            <div id="mid-right-container-o" class="mid-right-container-o"></div>
+        </div>
+        <div class="footer-container-o"></div>  
+    </div>
+</body>
+<script>
+    var images = ["/assets/img/banner.png", "/assets/img/ui.jpg", "/assets/img/ux.jpg", "/assets/img/contact.png"]
+    function changeImage(imageIndex) {
+        document.getElementById("mid-right-container-o").style.backgroundImage = `url(${images[imageIndex]})`
+    }
+</script>
+</html>
